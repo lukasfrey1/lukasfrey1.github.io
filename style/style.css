@@ -9,6 +9,6 @@ body {
 
     h4 {color: white;text-align: center; height: 20px; font-size: medium;}
 
-p {color: white; height:15px; font-size: small;text-align: justify;}
+p {color: white; height:15px; font-size: small;text-align: justify; font-style: italic;}
 
 li {color: white; height: 15px;font-size: small; text-align: justify;}
