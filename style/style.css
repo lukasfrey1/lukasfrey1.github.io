@@ -1,15 +1,14 @@
 body {
     background-color: black;
 }
-    h1{color: white; text-align: center; height: 20px;}
+    h1 {color: white; text-align: center; height: 20px;}
 
-    h2{color: white;text-align: center; font-style: oblique; }
+    h2 {color: white;text-align: center; font-style: oblique; }
 
-    h3{color: white;text-align: center;}
+    h3 {color: white;text-align: center;}
 
-    h4{color: white;text-align:center;}
+    h4 {color: white;text-align:center;}
 
-p {
-    color: white;}
+p {color: white;}
 
-li{list-style-type: armenian;color: white;}
+li {list-style-type: armenian;color: white;}
