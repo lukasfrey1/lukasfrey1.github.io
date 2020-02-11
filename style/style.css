@@ -1,7 +1,7 @@
 body {
     background-color: black;
 }
-    h1 {color: white; text-align:center; height: 50px;font-size: xx-large;}
+    h1 {color: white; text-align:center; height: 50px;font-size: 400%;}
 
     h2 {color: white;text-align: center; height: 40px; font-size: x-large;}
 
@@ -9,6 +9,6 @@ body {
 
     h4 {color: white;text-align: center; height: 20px; font-size: medium;}
 
-p {color: white; height:15px; font-size: small;text-align: justify; font-style: italic;}
+    p {color: white; height:15px; font-size: small;text-align: justify; font-style: italic;}
 
-li {color: white; height: 15px;font-size: small; text-align: justify;}
+    li {color: white; height: 15px;font-size: small; text-align: justify;}
