@@ -20,8 +20,13 @@ header{
 height: 25px; width: 20px;
 } 
 .spare {
-    height: 100px;width: 150px; object-position: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
 }
 .Chicken{
-    height: 200px; width: 150px; object-position: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
