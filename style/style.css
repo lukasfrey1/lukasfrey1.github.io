@@ -1,4 +1,4 @@
-body {
+    body {
     background-color: black;
 }
     h1 {color: white; text-align:center; font-size: 400%; font-family: Arial, Helvetica, sans-serif;}
@@ -14,38 +14,39 @@ body {
     li {color: white;font-size: 100%; text-align: justify; font-family: Arial, Helvetica, sans-serif;border-left: 200px black; border-right: black;}
 
 
-header{
-    background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center}
-    
-footer{
-    background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid black;}
+    header{
+        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center}
+        
+    footer{
+        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid black;}
 
-.lukas /* zur main page zurück */ { 
-height: 25px; width: 20px;
-} 
-.spare{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;}
-    
-.Chicken{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-}
+    .lukas /* zur main page zurück */ { 
+    height: 25px; width: 20px;
+    } 
+    .spare{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
+        
+    .Chicken{
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
 
-.Burger{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-}
-.tabelle{
-    background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-left: 200px black; border-right: black;}
+    .Burger{
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .tabelle{
+        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
+        margin-left: auto; margin-right: auto; border-spacing:50px 30px;}
 
-.text{
-    color: white;text-align: justify;  font-size: 100%; font-family: Arial, Helvetica, sans-serif; display: block;border: 200px black
-}
+    .text{
+        color: white;text-align: justify;  font-size: 100%; font-family: Arial, Helvetica, sans-serif; display: block;border: 200px black
+    }
 
-.list{ white; display: block;
-    
-}
+    .list{ white; display: block;
+    }
+
