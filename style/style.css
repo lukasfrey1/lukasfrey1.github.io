@@ -1,6 +1,6 @@
     body {background-color: black;} /* vielleicht nochmal boder einbauen etc*/
 
-    h1 {color: white; text-align:center; font-size: 400%; font-family: Arial, Helvetica, sans-serif;}
+    h1 {color: white; text-align:center; font-size: 600%; font-family: Arial, Helvetica, sans-serif;}
 
     h2 {color: white;text-align: center; font-size: 200%; font-family: Arial, Helvetica, sans-serif;}
 
@@ -12,12 +12,11 @@
 
     li {color: white;font-size: 100%; text-align: justify; font-family: Arial, Helvetica, sans-serif;}
 
-
     header{
-        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px;}
+        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px; margin-top: 120px;}
         
     footer{
-        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white;}
+        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
 
     .lukas /* zur main page zurück */ { 
     height: 25px; width: 20px;
@@ -32,18 +31,17 @@
     .Chicken{ 
         display: block;
         margin-left: auto;
-        margin-right: auto; 
-    }
+        margin-right: auto;}
 
     .Burger{
         display: block;
         margin-left: auto;
-        margin-right: auto; 
-    }
+        margin-right: auto;}
+
     /* restliche Formatierungen*/ 
     .tabelle{ 
         background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
-        margin-left: auto; margin-right: auto; border-spacing:50px 30px; border: white solid 10px;}
+        margin-left: auto; margin-right: auto; border: white solid 2px; margin-bottom: 20px;}
 
     .text{
         color: white;text-align: justify;  font-size: 100%; font-family: Arial, Helvetica, sans-serif; display: block;border: 200px black
@@ -58,3 +56,18 @@
          } 
 
     .quelle { text-decoration: none; color: white; }
+
+    .titelbild {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; -webkit-clip-path: circle(50.0% at 50% 50%);
+        clip-path: circle(50.0% at 50% 50%); width:102%; height: auto;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+
+
+    .maincontent{ margin-top: 0px;}
