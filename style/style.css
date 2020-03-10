@@ -9,7 +9,7 @@
 
     h4 {color: white;text-align: center; font-size: 100%; font-family: Arial, Helvetica, sans-serif;}
 
-    p {color: white;text-align: justify; text-align: center; font-size: 100%;text-align: justify; font-family: Arial, Helvetica, sans-serif;display: block;border: 200px black}
+    p {color: white;text-align: center; font-size: 100%; font-family: Arial, Helvetica, sans-serif;display: block;border: 10px white}
 
     li {color: white;font-size: 100%; text-align: justify; font-family: Arial, Helvetica, sans-serif;border-left: 200px black; border-right: black;}
 
@@ -41,7 +41,7 @@
     }
     .tabelle{
         background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
-        margin-left: auto; margin-right: auto; border-spacing:50px 30px;}
+        margin-left: auto; margin-right: auto; border-spacing:50px 30px; border: white solid 10px;}
 
     .text{
         color: white;text-align: justify;  font-size: 100%; font-family: Arial, Helvetica, sans-serif; display: block;border: 200px black
