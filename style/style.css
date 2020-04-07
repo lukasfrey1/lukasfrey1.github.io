@@ -101,10 +101,10 @@
                 .item8 { grid-column: 5 / span 8; grid-row: 4; }           
             }
 
-    .ingredients{position: static;
+    .ingredients{position:sticky
 
     }
-    .instructions{position: static
+    .instructions{poistion:sticky
 
 
     }
