@@ -135,11 +135,8 @@ a:link {
 
   .topnav {
     list-style-type: none;
-    margin: 0;    
-    padding: 0;
-    overflow: hidden;
     background-color:white;
-    float: left;
+
   }
   
   
