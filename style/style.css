@@ -1,26 +1,48 @@
-    body {background-color: black;} /* vielleicht nochmal boder einbauen etc*/
+    body {background-color:black;} 
 
-    h1 {color: white; text-align:center; font-size: 600%; font-family: Arial, Helvetica, sans-serif;}
+    h1 {font-family: "Times New Roman", Times, serif;
+        font-size: 400%;
+        letter-spacing: 4.8px;
+        word-spacing: 3.2px;
+        color: #000000;
+        font-weight: bold;
+        font-style: normal;
+        font-variant: small-caps;
+        text-transform: capitalize;}
 
-    h2 {color: white;text-align: center; font-size: 200%; font-family: Arial, Helvetica, sans-serif; text-decoration: none}
+    h2 {color: white;text-align: center; font-size: 200%; font-family: 'Times New Roman', Times, serif;}
 
-    h3 {color: white;text-align: center;font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-decoration: none}
+    h3 {color: white;text-align: center;font-size: 150%; font-family: 'Times New Roman', Times, serif; }
 
-    h4 {color: white;text-align: center; font-size: 100%; font-family: Arial, Helvetica, sans-serif;}
+    h4 {color: white;text-align: center; font-size: 100%; font-family: 'Times New Roman', Times, serif;}
 
-    p {color: white;text-align: center; font-size: 100%; font-family: Arial, Helvetica, sans-serif;display: block; margin-left: 8em; margin-right: 8em;}
+    p {color: white;text-align: center; font-size: 100%; font-family: 'Times New Roman', Times, serif;display: block; margin-left: 8em; margin-right: 8em;}
 
-    li {color: white;font-size: 100%; text-align: justify; font-family: Arial, Helvetica, sans-serif;}
+    li {color: white;font-size: 100%; text-align: justify; font-family: 'Times New Roman', Times, serif;}
 
+
+    
     header{
         background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px;}
         
     footer{
         background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
 
-    .lukas /* zur main page zurück */ { 
-    height: 25px; width: 20px;
+       /* Titelseite Formatierungen */ 
+        .TITELSEITE{ background-color:white; }
+
+        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto; position:;
+    
+        }
+        .TITEL
+        
+
+
+    .home /* zur main page zurück */ { 
+    height: 23px; width: 20px;
     } 
+
+
     /* Bilder*/
     .spare{
         display: block;
@@ -57,20 +79,7 @@
 
     .quelle { text-decoration: none; color: white; }
 
-    .titelbild {
-        display: block;
-        margin-left: auto;
-        margin-right: auto; -webkit-clip-path: circle(50.0% at 50% 50%);
-        clip-path: circle(50.0% at 50% 50%); width:102%; height: auto; margin-top: 40px; margin-bottom: 40px;
-    }
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);}
-
-
-    .maincontent{ margin-top: 0px;}
+   
 
         
     .Grills{ background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
@@ -111,16 +120,27 @@ a:link {
   
   /* besuchter link */
   a:visited {
-    color:red;
+    color:black;
   }
   
   /* Maus über link */
   a:hover {
-    color: lightpink;
+    color:navy;
   }
   
   /* ausgewählter link */
   a:active {
-    color: lightpink;
+    color:green;
   }
 
+  .topnav {
+    list-style-type: none;
+    margin: 0;    
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    float: 
+    ;
+  }
+  
+  
