@@ -130,12 +130,13 @@ a:link {
   
   /* ausgewählter link */
   a:active {
-    color:green;
+    color: grey;
   }
 
   .topnav {
     list-style-type: none;
     background-color:white;
+    text-decoration: none;
 
   }
   
