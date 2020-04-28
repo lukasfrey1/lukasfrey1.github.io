@@ -72,9 +72,7 @@
     .list{ color: white; display: block;
         margin-left: auto; margin-right: auto;  border: solid white 4px} /* nochmals überprüfen*/
 
-    .news{ zoom: 4; 
-        margin-left: auto;
-        margin-right: auto;
+    .news{ color: white;
          } 
 
     .quelle { text-decoration: none; color: white; }
