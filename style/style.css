@@ -31,10 +31,9 @@
        /* Titelseite Formatierungen */ 
         .TITELSEITE{ background-color:white; }
 
-        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto; position:;
-    
-        }
-        .TITEL
+        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto; position: relative; bottom: 250px; left: 800px;
+     }
+        .TITEL {position: relative; left: 60px; }
         
 
 
@@ -103,10 +102,10 @@
               }
             
 
-    .ingredients{position:sticky
+    .ingredients{
 
     }
-    .instructions{position:sticky
+    .instructions{
 
 
     }
@@ -133,8 +132,11 @@ a:link {
 
   .topnav {
     list-style-type: none;
-    background-color:white;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    
 
   }
   
