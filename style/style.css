@@ -1,7 +1,4 @@
-   
-         
-
-   
+  
    /* Basics */
         body {background-color:white;} 
 
@@ -22,9 +19,10 @@
             
             header::after {content:''; display: table; clear: both;}
             
-        footer{ 
-            background-color: white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
-
+        footer {font-family: 'Libre Barcode 39', cursive; background-color: white;  ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
+             
+            footer a { text-decoration: none; color: black;}
+            footer a:hover {cursor: help; }
 
 /* Navbar */
 
@@ -36,7 +34,7 @@
 
         nav li { display: inline-block; margin-left: 100px; padding-top: 30px; position: relative; }
 
-        nav a {color: grey; text-decoration: none;}
+        nav ul li a {color: grey; text-decoration: none;}
 
         nav ul li a:hover {color: black;} 
          
@@ -50,13 +48,6 @@
         .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto;}
         
         .TITEL {}
-        
-
-
-   
-         .home /* zur main page zurück */ { 
-    height: 23px; width: 20px;
-    } 
 
 
     /* Bilder*/
