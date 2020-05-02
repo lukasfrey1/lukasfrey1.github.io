@@ -15,32 +15,39 @@
 
         li {color: blakc;font-size: 100%; text-align: justify; font-family: 'Times New Roman', Times, serif;}
 
-
         header{
-            background-color: white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px;}
+            background-color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px;}
             
-        footer{
+            header::after {content:''; display: table; clear: both;}
+            
+        footer{ 
             background-color: white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
 
 
 /* Navbar */
-         .topnav {float: right; padding-right: 50px;}
+
+        .Logo{float: left; zoom: 0.09;}
+
+        .topnav {float: right; padding-right: 20px; }
           
         nav ul {margin: 0; padding: 0; list-style: none;}
 
         nav li { display: inline-block; margin-left: 100px; padding-top: 30px; position: relative; }
 
-        nav ul li a {color: grey; text-decoration: none;}
+        nav a {color: grey; text-decoration: none;}
 
-        nav  a :hover {background-color: grey;}
+        nav ul li a:hover {color: black;} 
          
-        nav a::before {content:''; display: block; height: 5px; width: 100% ;background-color: white; }
+        nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
 
-      .Logo{ float: left; zoom: 0.09;}
+        nav ul li a:hover::before { width: 100%;}
+
+      
 
     /* Indexseite*/
-        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto; position: relative; bottom: 250px; left: 800px;}
-        .TITEL {position: relative; left: 60px;  }
+        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto;}
+        
+        .TITEL {}
         
 
 
