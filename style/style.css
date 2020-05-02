@@ -1,87 +1,94 @@
-    body {background-color:black;} 
+   
+   
+   /* Basics */
+        body {background-color:white;} 
 
-    h1 {font-family: "Times New Roman", Times, serif;
-        font-size: 400%;
-        letter-spacing: 4.8px;
-        word-spacing: 3.2px;
-        color: #000000;
-        font-weight: bold;
-        font-style: normal;
-        font-variant: small-caps;
-        text-transform: capitalize;}
+        h1 {font-family: "Times New Roman", Times, serif; font-size: 400%; letter-spacing: 4.8px;word-spacing: 3.2px;color: black;font-weight: bold;font-style: normal; font-variant: small-caps;text-transform: capitalize;}
 
-    h2 {color: white;text-align: center; font-size: 200%; font-family: 'Times New Roman', Times, serif;}
+        h2 {color: black;text-align: center; font-size: 200%; font-family: 'Times New Roman', Times, serif;}
 
-    h3 {color: white;text-align: center;font-size: 150%; font-family: 'Times New Roman', Times, serif; }
+        h3 {color:black;text-align: center;font-size: 150%; font-family: 'Times New Roman', Times, serif; }
 
-    h4 {color: white;text-align: center; font-size: 100%; font-family: 'Times New Roman', Times, serif;}
+        h4 {color: black;text-align: center; font-size: 100%; font-family: 'Times New Roman', Times, serif;}
 
-    p {color: white;text-align: center; font-size: 100%; font-family: 'Times New Roman', Times, serif;display: block; margin-left: 8em; margin-right: 8em;}
+        p {color: black;text-align: righ; }
 
-    li {color: white;font-size: 100%; text-align: justify; font-family: 'Times New Roman', Times, serif;}
+        li {color: blakc;font-size: 100%; text-align: justify; font-family: 'Times New Roman', Times, serif;}
 
 
-    
-    header{
-        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px;}
+        header{
+            background-color: white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-bottom: white solid 2px;}
+            
+        footer{
+            background-color: white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
+
+
+/* Navbar */
+         .topnav {float: right; padding-right: 50px;}
+          
+        nav ul {margin: 0; padding: 0; list-style: none;}
+
+        nav li { display: inline-block; margin-left: 100px; padding-top: 30px; position: relative; }
+
+        nav ul li a {color: grey; text-decoration: none;}
+
+        nav  a :hover {background-color: grey;}
+         
+        nav a::before {content:''; display: block; height: 5px; width: 100% ;background-color: white; }
+
+      .Logo{ float: left; zoom: 0.09;}
+
+    /* Indexseite*/
+        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto; position: relative; bottom: 250px; left: 800px;}
+        .TITEL {position: relative; left: 60px;  }
         
-    footer{
-        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px;}
-
-       /* Titelseite Formatierungen */ 
-        .TITELSEITE{ background-color:white; }
-
-        .TITELBILD{ border-radius: 50% / 50% ; width: 40%; height: auto; position: relative; bottom: 250px; left: 800px;
-     }
-        .TITEL {position: relative; left: 60px; }
-        
 
 
-    .home /* zur main page zurück */ { 
+   
+         .home /* zur main page zurück */ { 
     height: 23px; width: 20px;
     } 
 
 
     /* Bilder*/
-    .spare{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%; height: auto;}
-        
-    .Chicken{ 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;}
+        .spare{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%; height: auto;}
+            
+        .Chicken{ 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;}
 
-    .Burger{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;}
+        .Burger{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;}
 
     /* restliche Formatierungen*/ 
-    .tabelle{ 
-        background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
-        margin-left: auto; margin-right: auto; border: white solid 2px; margin-bottom: 20px;}
+        .tabelle{ 
+            background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
+            margin-left: auto; margin-right: auto; border: white solid 2px; margin-bottom: 20px;}
 
-    .text{
-        color: white;text-align: justify;  font-size: 100%; font-family: Arial, Helvetica, sans-serif; display: block;border: 200px black
-        margin-left: auto; margin-right: auto; } /* nochmals überprüfen*/
+        .text{
+            color: white;text-align: justify;  font-size: 100%; font-family: Arial, Helvetica, sans-serif; display: block;border: 200px black
+            margin-left: auto; margin-right: auto; } /* nochmals überprüfen*/
 
-    .list{ color: white; display: block;
-        margin-left: auto; margin-right: auto;  border: solid white 4px} /* nochmals überprüfen*/
+        .list{ color: white; display: block;
+            margin-left: auto; margin-right: auto;  border: solid white 4px} /* nochmals überprüfen*/
 
-    .news{ color: white;
-         } 
+        .news{ color: white;
+            } 
 
-    .quelle { text-decoration: none; color: white; }
+        .quelle { text-decoration: none; color: white; }
 
    
 
         
     .Grills{ background-color: black; color:white; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; border-collapse: separate;
-        margin-left: auto; margin-right: auto; border: white solid 2px; margin-bottom: 20px;flex-wrap: wrap;}
-    }
+        margin-left: auto; margin-right: auto; border: white solid 2px; margin-bottom: 20px;flex-wrap: wrap; }
 
     .grid-container {
         display: grid;
@@ -110,34 +117,9 @@
 
     }
 
-    /* unbesuchter link */
-a:link {
-    color: white;
-  }
-  
-  /* besuchter link */
-  a:visited {
-    color:black;
-  }
-  
-  /* Maus über link */
-  a:hover {
-    color:navy;
-  }
-  
-  /* ausgewählter link */
-  a:active {
-    color: grey;
-  }
+   
 
-  .topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-    
 
-  }
+  
   
   
