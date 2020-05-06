@@ -2,7 +2,7 @@
    /* Basics */
         body {background-color:white;} 
 
-        h1 {font-family: 'Domine', serif;  font-size: 4vw; ;}
+        h1 {font-family: 'Domine', serif;  font-size: 4vw; writing-mode: horizontal-tb;}
 
         h2 {color: black;text-align: center; font-size: 200%;font-family: 'Domine', serif; }
 
@@ -17,7 +17,7 @@
         header{
             background-color:white; font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px;}
             
-            header::after {content:''; display: table; clear: both;}
+            header::after {content:''; display: table; clear: both; }
             
         footer {font-family: 'Bungee Hairline', cursive; padding: 100px; background: rgb(152,153,152);
             background: linear-gradient(0deg, rgba(152,153,152,1) 0%, rgba(197,199,197,1) 19%, rgba(255,255,255,1) 100%); ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
@@ -49,7 +49,7 @@
 
         .index {display: grid; height: 100%; grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(3,1fr);grid-gap: 20px; margin: 50px; }
         .TITELBILD {border-radius: 50%; zoom: }
-        .index-item {display: flex; justify-content: center; align-items: center; background: white;}
+        .index-item {display: flex; justify-content: center; align-items: center; background: white; }
         
         .index-item.normal {grid-row:  span 1 ; grid-column: span 1;}
         .index-item.medium {grid-row: span 1; grid-column: span 1; }
@@ -57,7 +57,11 @@
         a {text-decoration: none;}
         a:hover{ cursor: grab;}
         
-
+        @media only screen and  (max-width: 400px) 
+            {.index {display: grid; height: 100% ; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(1,fr); grid-gap: 5px;}
+            .index-item {display: flex; justify-content: center; align-items: center;}
+            }
+           
  /* Recipes*/
         .recipes {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 20px}
         .recipes-item {justify-content: center; align-items: center; background: white; margin: 20px;}
@@ -66,6 +70,11 @@
             .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in; }
         .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column:  span 1; }
         
+/* Grills*/ 
+    .Grills {display: grid; height: 100%; grid-template-rows:  repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 20px; }
+    .Grills-item {justify-content: center; align-items: center; background: blue; margin: 20px;}
+
+
     /* Bilder*/
         .spare{
             display: block;
@@ -85,21 +94,37 @@
             border-radius: 10%;
             }
 
-            .BBQContest{ width: 100px; margin: 20px;}
+            .BBQContest{ width: calc(100px + 30px); margin: 20px;}
+
+        .gp { display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: calc(200px + 200px) ;}
 
     /* restliche Formatierungen*/ 
-        .tabelle{ 
-            background-color: white; color:black; font-family: Arial, Helvetica, sans-serif;font-size: 150%;text-align: center; 
-            border: black solid 2px;}
+        
 
         .quelle {text-decoration: none; color: black; text-align: center;font-family: 'Libre Barcode 39', cursive; }
      
 
         .news{ color: white; text-align: center; } 
 
+        
+  /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+  }
   
-
-   
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {background-color: yellow;
+      
+    }
+  }
+  
+  
 
         
     
