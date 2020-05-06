@@ -2,7 +2,7 @@
    /* Basics */
         body {background-color:white;} 
 
-        h1 {font-family: 'Domine', serif; font-size: 300%;}
+        h1 {font-family: 'Domine', serif;  font-size: 4vw; ;}
 
         h2 {color: black;text-align: center; font-size: 200%;font-family: 'Domine', serif; }
 
@@ -12,14 +12,15 @@
 
         p {color: black; font-family: 'Domine', serif; text-align: justify; font-size: 100%; }
 
-        li {color: black;font-size: 100%; ; font-family: 'Domine', serif; }
+        li {color: black;font-size: 100% ; font-family: 'Domine', serif; }
 
         header{
             background-color:white; font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px;}
             
             header::after {content:''; display: table; clear: both;}
             
-        footer {font-family: 'Bungee Hairline', cursive; background-color: white;  ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
+        footer {font-family: 'Bungee Hairline', cursive; padding: 100px; background: rgb(152,153,152);
+            background: linear-gradient(0deg, rgba(152,153,152,1) 0%, rgba(197,199,197,1) 19%, rgba(255,255,255,1) 100%); ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
              
             footer a {text-decoration: none; color: black;}
             footer a:hover {cursor: help; }
@@ -28,7 +29,7 @@
 
         .Logo{float: left; zoom: 0.09;}
 
-        .topnav {float: right; padding-right: 20px; }
+        .topnav {float: right; padding-right: 20px;  }
           
         nav ul {margin: 0; padding: 0; list-style: none;}
 
