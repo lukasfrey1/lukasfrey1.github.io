@@ -15,25 +15,19 @@
         li {color: black;font-size: 100% ; font-family: 'Domine', serif; }
 
         header{
-            background-color: var(--backgroundheader); font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px; position: relative; z-index: 10; width: 100%;}
-            
-            
-            
+            background-color: var(--backgroundheader); font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px; position: relative; width: 100%;}
+              
         footer {font-family: 'Bungee Hairline', cursive; padding: 100px; background: rgb(152,153,152);
             background: linear-gradient(0deg, rgba(152,153,152,1) 0%, rgba(197,199,197,1) 19%, rgba(255,255,255,1) 100%); ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
              
             footer a {text-decoration: none; color: black;}
             footer a:hover {cursor: help; }
 
-/* Navbar */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
+    /* Navbar */    
 
         .Logo{zoom: 0.09; }
         .nav-toggle {display:none; position: absolute ;
-            top: -9999px ;
-            left: -9999px ;}
+            ;}
         .nav-toggle-label {position: absolute;
             top: 0;
             left: 0;
@@ -42,30 +36,31 @@
             display: flex;
             align-items: center;}
         .nav-toggle-label:hover {cursor: grab; transform: rotate(90deg);}
+        
         .nav-toggle-label span,
         .nav-toggle-label span::before,
         .nav-toggle-label span::after {
         display: block;
         background:black;
-        height: 2px;
-        width: 2em;
+        height: 4px;
+        width: 1em;
         border-radius: 2px;
         position: relative;
         }
                 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+        }
 
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
+        .nav-toggle-label span::before {
+        bottom: 7px;
+        }
 
-.nav-toggle-label span::after {
-  top: 7px;
-}
+        .nav-toggle-label span::after {
+        top: 7px;
+        }
 
         .topnav {
             position: absolute;
@@ -74,15 +69,16 @@
             left: 0;
             background: var(--background);
             width: 100%;
-            transform: scale(1, 0);
+            transform: scale(1,0);
             transform-origin: top;
             transition: transform 400ms ease-in-out;
+            
           }
         nav ul {margin: 0; padding: 0; list-style: none;}
 
         nav li {margin-bottom: 1em; margin-left: 1em;}
 
-        nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out ;}
+        nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out;}
 
         nav a:hover{color: black;}
 
@@ -122,7 +118,7 @@
         
 /* Grills*/ 
     .Grills {display: grid; height: 100%; grid-template-rows:  repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 20px; }
-    .Grills-item {justify-content: center; align-items: center; background: blue; margin: 20px;}
+    .Grills-item {justify-content: center; align-items: center; background:blue; margin: 20px;}
 
 
     /* Bilder*/
@@ -168,8 +164,7 @@
     
      
     
-  :root{--backgroundheader:pink
- }
+  :root{--backgroundheader:white
   
   
  @media screen and (min-width: 800px) {
@@ -177,67 +172,27 @@
       display: none;
     }
   
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
+    header::after {content:''; display: table; clear: both; }
     
-    .logo {
-      grid-column: 2 / 3;
-    }
-    
-    nav {
-      // all: unset; 
-      
-      
-      position: relative;
-      text-align: left;
-      transition: none;
-      transform: scale(1,1);
-      background: none;
-      top: initial;
-      left: initial;
-      
-      
-      grid-column: 3 / 4;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      
-    }
-    
-    nav ul {
-      display: flex;
-    }
-    
-    nav li {
-      margin-left: 3em;
-      margin-bottom: 0;
-    }
-    
-    nav a {
-      opacity: 1;
-      position: relative;
-    }
-    
-    nav a::before {
-      content: '';
-      display: block;
-      height: 5px;
-      background: black;
-      position: absolute;
-      top: -.75em;
-      left: 0;
-      right: 0;
-      transform: scale(0, 1);
-      transition: transform ease-in-out 250ms;
-    }
-    
-    nav a:hover::before {
-      transform: scale(1,1);
-    }
-  }
-  
+      .Logo {float:left;zoom: 0.09;
+      }
+     .topnav {float: right; padding-right: 20px;  }
+               
+             nav ul {margin: 0; padding: 0; list-style: none;}
+     
+             nav li { display: inline-block; margin-left: 70px; padding-top: 30px; position: relative; }
+     
+             nav ul li a {color: grey; text-decoration: none;}
+     
+             nav ul li a:hover {color: black;} 
+              
+             nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
+     
+             nav ul li a:hover::before { width: 100%;}
+     
+     
+     header::after {content:''; display: table; clear: both; }
+}
   
         
     
