@@ -15,9 +15,9 @@
         li {color: black;font-size: 100% ; font-family: 'Domine', serif; }
 
         header{
-            background-color:white; font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px;}
+            background-color: var(--backgroundheader); font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px;}
             
-            header::after {content:''; display: table; clear: both; }
+            
             
         footer {font-family: 'Bungee Hairline', cursive; padding: 100px; background: rgb(152,153,152);
             background: linear-gradient(0deg, rgba(152,153,152,1) 0%, rgba(197,199,197,1) 19%, rgba(255,255,255,1) 100%); ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
@@ -27,22 +27,41 @@
 
 /* Navbar */
 
-        .Logo{float: left; zoom: 0.09;}
+        .Logo{zoom: 0.09; }
+        .nav-toggle {display:none;}
+        .nav-toggle-label {position: absolute; top: 0; left: 0; margin-left: 1em;  height: 100%; display: flex; align-items: center;}
+        .nav-toggle-label:hover {cursor: grab;}
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {display: block; background: white; height: 2px; width: 2em; border-radius: 2px; position: relative;}
+        
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after{ content: ''; position: absolute;}
 
-        .topnav {float: right; padding-right: 20px;  }
-          
+        .nav-toggle-label span::before{bottom: 7px;}
+        .nav-toggle-label span::after {top: 7px;}
+
+        .topnav {position: absolute; text-align: left; top: 100%; left: 0; background: var(--backgroundheader); width: 100%; transform: scale(1,0);transform-origin: top; transition: transform 400ms ease-in-out;} 
         nav ul {margin: 0; padding: 0; list-style: none;}
+        nav li {margin-bottom: 1em; margin-left: 1em;}
+        nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out ; }
+        nav a:hover{color: black;}
 
-        nav li { display: inline-block; margin-left: 70px; padding-top: 30px; position: relative; }
+        .nav-toggle:checked ~ nav {transform: scale(1,1);}
+        .nav-toggle:checked ~ nav a {
+            opacity: 1;
+            transition: opacity 250ms ease-in-out 250ms;
+        }
 
-        nav ul li a {color: grey; text-decoration: none;}
+        
+        header{ background-color: var(--backgroundheader);  text-align: center; position: fixed; z-index: 10; width: 100%;}
 
-        nav ul li a:hover {color: black;} 
-         
-        nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
+        
 
-        nav ul li a:hover::before { width: 100%;}
+       
+     
 
+    
       
 
  /* Indexseite*/
@@ -57,9 +76,7 @@
         a {text-decoration: none;}
         a:hover{ cursor: grab;}
         
-        @media only screen and  (max-width: 400px) 
-            {.index {display: grid; height: 100% ; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(1,fr); grid-gap: 5px;}
-            .index-item {display: flex; justify-content: center; align-items: center;}
+      
             }
            
  /* Recipes*/
@@ -111,18 +128,37 @@
 
         
   /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (min-device-width: 375px) 
+and (max-device-width: 812px)  {
     body {
       background-color: #F09A9D; /* Red */
     }
+    .index {display: grid; height: 100% ; grid-template-rows: repeat(9,1fr); grid-template-columns: repeat(1,fr); grid-gap: 5px;}
+        .index-item {display: flex; justify-content: center; align-items: center;}
+        .normal {grid-row: span 1 ; grid-column: span 1;}
+        .medium {grid-row: span 1; grid-column: span 1; }
+        .big {grid-row: span 1; grid-column: span 1; background-color: whitesmoke; border-radius: 10%;}
   }
   
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {background-color: yellow;
-      
+    body {background-color: yellow}
+        .index {display: grid; height: 100% ; grid-template-rows: repeat(6,1fr); grid-template-columns: repeat(2,fr); grid-gap: 5px;}
+        .index-item {display: flex; justify-content: center; align-items: center;}
+        .normal {grid-row: span 1 ; grid-column: span 1;}
+        .medium {grid-row: span 1; grid-column: span 1; }
+        .big {grid-row: span 1; grid-column: span 1; background-color: whitesmoke; border-radius: 10%;}
+
+        .topnav {position: absolute; text-align: left; top: 100%; left: 0;} 
+        nav ul {margin: 0; padding: 0; list-style: none;}
+        nav li {margin-bottom: 1em; margin-left: 1em;}
+        nav a {color: black;}
+        header{ background-color: var(--backgroundheader);  text-align: center; position: fixed; z-index: 10; width: 100%;}
+
     }
-  }
+     
+    
+  :root{--backgroundheader:rgba(85,214,170, 1) }
   
   
 
