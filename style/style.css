@@ -26,7 +26,7 @@
     /* Navbar */    
 
         .Logo{zoom: 0.09; }
-        .nav-toggle {display:none; position: absolute ;
+        .nav-toggle {display:block; position: absolute ;
             ;}
         .nav-toggle-label {position: absolute;
             top: 0;
@@ -35,6 +35,7 @@
             height: 100%;
             display: flex;
             align-items: center;}
+            
         .nav-toggle-label:hover {cursor: grab; transform: rotate(90deg);}
         
         .nav-toggle-label span,
@@ -50,8 +51,8 @@
                 
         .nav-toggle-label span::before,
         .nav-toggle-label span::after {
-    content: '';
-    position: absolute;
+        content: '';
+        position: absolute;
         }
 
         .nav-toggle-label span::before {
@@ -69,25 +70,25 @@
             left: 0;
             background: var(--background);
             width: 100%;
-            transform: scale(1,0);
+            transform: scale(1, 1);
             transform-origin: top;
-            transition: transform 400ms ease-in-out;
-            
+            transition: transform 400ms ease-in-out; 
           }
+          
         nav ul {margin: 0; padding: 0; list-style: none;}
 
         nav li {margin-bottom: 1em; margin-left: 1em;}
 
         nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out;}
 
-        nav a:hover{color: black;}
+        nav a:hover{color: black; }
 
         .nav-toggle:checked ~ nav {
-            transform: scale(1,1);}
+            transform: scale(1,1)}
 
-            .nav-toggle:checked ~ nav a {
+        .nav-toggle:checked ~ nav a {
                 opacity: 1;
-                transition: opacity 250ms ease-in-out 250ms;
+                transition: opacity 250s ease-in-out 250s; 
               }
 
         
@@ -111,7 +112,7 @@
  /* Recipes*/
         .recipes {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 20px}
         .recipes-item {justify-content: center; align-items: center; background: white; margin: 20px;}
-        .recipes-item.image  {grid-row: span 2; grid-column: span 2;background: white; margin: 60px;} 
+        .recipes-item.image  {grid-row: span 1; grid-column: span 2;background: white; margin: 60px;} 
             .recipes-item.image img {transition: 2s;}
             .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in; }
         .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column:  span 1; }
@@ -157,44 +158,42 @@
 
         
   
-   
+ :root{--backgroundheader:white
 
   
 
     
      
     
-  :root{--backgroundheader:white
+ 
   
   
- @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-      display: none;
-    }
+ 
   
+@media only screen and (min-width: 800px){
+    
+.nav-toggle-label {display: none}
     header::after {content:''; display: table; clear: both; }
     
-      .Logo {float:left;zoom: 0.09;
-      }
-     .topnav {float: right; padding-right: 20px;  }
-               
-             nav ul {margin: 0; padding: 0; list-style: none;}
-     
-             nav li { display: inline-block; margin-left: 70px; padding-top: 30px; position: relative; }
-     
-             nav ul li a {color: grey; text-decoration: none;}
-     
-             nav ul li a:hover {color: black;} 
-              
-             nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
-     
-             nav ul li a:hover::before { width: 100%;}
-     
-     
-     header::after {content:''; display: table; clear: both; }
+.Logo {float:left;zoom: 0.09;
 }
-  
+.topnav {float: right; padding-right: 20px;}
+         
+       nav ul {margin: 0; padding: 0; list-style: none;}
+
+       nav li { display: inline-block; margin-left: 70px; padding-top: 30px; position: relative; }
+
+       nav ul li a {color: grey; text-decoration: none;}
+
+       nav ul li a:hover {color: black;} 
         
+       nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
+
+       nav ul li a:hover::before { width: 100%;}
+
+
+header::after {content:''; display: table; clear: both; }
+}     
     
     
   
@@ -204,7 +203,6 @@
 
 
    
-
 
   
   
