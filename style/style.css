@@ -3,7 +3,7 @@
         body {background-color:white; overflow: scroll;} 
 
         h1 {font-family: 'Domine', serif;  font-size: 4vw; writing-mode: horizontal-tb;}
-        h1:hover{text-shadow: grey 10px 10px 6px;;}
+        h1:hover{text-shadow: white 10px 10px 10px;;}
         h1:hover:first-letter{font-size: 150%; text-shadow: none;}
 
         h2 {color: black;text-align: center; font-size: 200%;font-family: 'Domine', serif; }
@@ -109,7 +109,7 @@
         a {text-decoration: none;}
         a:hover{ cursor: grab;}
         .svg {zoom: 0.3;}
-        .svg:hover{transform: rotate(189deg); cursor:progress;}
+        .svg:hover{transform: rotate(189deg) scale(2);transition: 3s; cursor:progress;}
         
       
             }
@@ -172,11 +172,9 @@
     
  
   
-  
  
   
-    @media only screen and (min-width: 800px){
-    
+@media only screen and (min-width: 800px){    
 .nav-toggle-label {display: none}
     header::after {content:''; display: table; clear: both; }
     
