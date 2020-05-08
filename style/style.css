@@ -72,9 +72,10 @@
             left: 0;
             background: var(--background);
             width: 100%;
-            transform: scale(1, 0);
+            transform: scale(1,0);
             transform-origin: top;
             transition: transform 400ms ease-in-out; 
+            
           }
           
         nav ul {margin: 0; padding: 0; list-style: none;}
@@ -100,7 +101,7 @@
  /* Indexseite*/
 
         .index {display: grid; height: 100%; grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(3,1fr);grid-gap: 20px; margin: 50px; }
-        .TITELBILD {border-radius: 50%; zoom: }
+        .TITELBILD {border-radius: 50%;}
         .index-item {display: flex; justify-content: center; align-items: center; background: white; }
         
         .index-item.normal {grid-row:  span 1 ; grid-column: span 1;}
@@ -112,18 +113,19 @@
         .svg:hover{transform: rotate(189deg) scale(2);transition: 3s; cursor:progress;}
         
       
-            }
+            
            
  /* Recipes*/
         .recipes {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 20px}
         .recipes-item {justify-content: center; align-items: center; background: white; margin: 20px;}
         .recipes-item.image  {grid-row: span 1; grid-column: span 2;background: white; margin: 60px;} 
             .recipes-item.image img {transition: 2s;}
-            .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in; }
+            .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in;}
         .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column: span 1;}
+     
         
 /* Grills*/ 
-    .Grills {display: grid; height: 100%; grid-template-rows:  repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 20px; }
+    .Grills {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 20px;}
     .Grills-item {justify-content: center; align-items: center; background:blue; margin: 20px;}
 
 
@@ -171,48 +173,39 @@
      
     
  
-  
+    
  
   
-@media only screen and (min-width: 800px){    
-.nav-toggle-label {display: none}
-    header::after {content:''; display: table; clear: both; }
+
     
-.Logo {float:left;zoom: 0.09;
-}
-.topnav {float: right; padding-right: 20px;}
-         
-       nav ul {margin: 0; padding: 0; list-style: none;}
-
-       nav li { display: inline-block; margin-left: 70px; padding-top: 30px; position: relative; }
-
-       nav ul li a {color: grey; text-decoration: none;}
-
-       nav ul li a:hover {color: black;} 
-        
-       nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
-
-       nav ul li a:hover::before { width: 100%;}
-
-
-header::after {content:''; display: table; clear: both; }
-}     
-    
-@media screen and (prefers-color-scheme: dark) {
+    @media screen and (prefers-color-scheme: dark) {
     body {
       background-color: blue
       color: white
     }
         
-    
+    @media screen and (min-width: 800px){    
+        .nav-toggle-label {display: none}
+            header::after {content:''; display: table; clear: both; }
+            
+        .Logo {float:left;zoom: 0.09;
+        }
+        .topnav {float: right; padding-right: 20px;}
+                 
+               nav ul {margin: 0; padding: 0; list-style: none;}
+        
+               nav li { display: inline-block; margin-left: 70px; padding-top: 30px; position: relative; }
+        
+               nav ul li a {color: grey; text-decoration: none;}
+        
+               nav ul li a:hover {color: black;} 
+                
+               nav ul li a::before {content:''; display: block; height: 5px ;background-color: black; position: absolute; top: 0; width: 0%; transition: all ease-in-out 250ms;}
+        
+               nav ul li a:hover::before { width: 100%;}
   
    
+               header::after {content:''; display: table; clear: both;}
+        
+            }     
 
-
-
-
-   
-
-  
-  
-  
