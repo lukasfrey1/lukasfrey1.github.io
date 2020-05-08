@@ -1,8 +1,10 @@
   
    /* Basics */
-        body {background-color:white;} 
+        body {background-color:white; overflow: scroll;} 
 
         h1 {font-family: 'Domine', serif;  font-size: 4vw; writing-mode: horizontal-tb;}
+        h1:hover{text-shadow: grey 10px 10px 6px;;}
+        h1:hover:first-letter{font-size: 150%; text-shadow: none;}
 
         h2 {color: black;text-align: center; font-size: 200%;font-family: 'Domine', serif; }
 
@@ -21,13 +23,13 @@
             background: linear-gradient(0deg, rgba(152,153,152,1) 0%, rgba(197,199,197,1) 19%, rgba(255,255,255,1) 100%); ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
              
             footer a {text-decoration: none; color: black;}
-            footer a:hover {cursor: help; }
+            footer a:hover {cursor: help;}
 
     /* Navbar */    
 
-        .Logo{zoom: 0.09; }
-        .nav-toggle {display:block; position: absolute ;
-            ;}
+        .Logo{zoom: 0.09;}
+        .nav-toggle {display:none; position: absolute ;
+            }
         .nav-toggle-label {position: absolute;
             top: 0;
             left: 0;
@@ -70,7 +72,7 @@
             left: 0;
             background: var(--background);
             width: 100%;
-            transform: scale(1, 1);
+            transform: scale(1, 0);
             transform-origin: top;
             transition: transform 400ms ease-in-out; 
           }
@@ -84,11 +86,12 @@
         nav a:hover{color: black; }
 
         .nav-toggle:checked ~ nav {
-            transform: scale(1,1)}
+            transform: scale(1,1)
+        }
 
         .nav-toggle:checked ~ nav a {
                 opacity: 1;
-                transition: opacity 250s ease-in-out 250s; 
+                transition: opacity 150s ease-in-out 250s; 
               }
 
         
@@ -105,6 +108,8 @@
         .index-item.big {grid-row: span 2; grid-column: span 2; background-color: whitesmoke; border-radius: 10%;}
         a {text-decoration: none;}
         a:hover{ cursor: grab;}
+        .svg {zoom: 0.3;}
+        .svg:hover{transform: rotate(189deg); cursor:progress;}
         
       
             }
@@ -115,7 +120,7 @@
         .recipes-item.image  {grid-row: span 1; grid-column: span 2;background: white; margin: 60px;} 
             .recipes-item.image img {transition: 2s;}
             .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in; }
-        .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column:  span 1; }
+        .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column: span 1;}
         
 /* Grills*/ 
     .Grills {display: grid; height: 100%; grid-template-rows:  repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 20px; }
@@ -141,7 +146,7 @@
             border-radius: 10%;
             }
 
-            .BBQContest{ width: calc(100px + 30px); margin: 20px;}
+            .BBQContest{ width: calc(100px + 30px); margin: 20px; object-fit: contain;}
 
         .gp { display: block;
             margin-left: auto;
@@ -170,7 +175,7 @@
   
  
   
-@media only screen and (min-width: 800px){
+    @media only screen and (min-width: 800px){
     
 .nav-toggle-label {display: none}
     header::after {content:''; display: table; clear: both; }
@@ -195,6 +200,12 @@
 header::after {content:''; display: table; clear: both; }
 }     
     
+@media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: blue
+      color: white
+    }
+        
     
   
    
