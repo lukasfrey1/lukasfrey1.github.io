@@ -82,7 +82,7 @@
 
         nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out;}
 
-        nav a:hover{color: black; }
+        nav a:hover{color: black;}
 
         .nav-toggle:checked ~ nav {transform: scale(1,1)}
 
@@ -181,7 +181,7 @@
         
           header {
             display: grid;
-            grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+            grid-template-columns: 1fr auto minmax(200px, 3fr) 1fr;
             margin-top: 20px;
           }
           
@@ -194,9 +194,7 @@
             transform: scale(1,1);
             background-color: var(--backgroundheader);
             top: initial;
-            left: 200px;
-            
-            
+            left: 50px;         
             grid-column: 3 / 4;
             display: flex;
             justify-content: flex-end;
@@ -241,11 +239,23 @@
         p{color: white;}
         h1 {color: white;}
         h2 {color: white;}
+        h3 {color: white;}
+        h4 {color: white;}
+        li {color: white;}
         h1:hover{text-shadow: black 10px 10px 10px; ;}
         .index-item.big{background-color: black; }
         .index-item{background-color: black;}
         header {background-color: black; border-bottom: white solid 2px;}
         .Logo {background-color: white; padding:100px; border-radius: 10%;}
-        
+        .topnav{background-color: black;}
+        nav a:hover{color: white;}
+        nav a::before {background: white; transform-origin: left;}
+        .recipes-item.normal{background: black; border: white solid 1px;}
+        .recipes-item.image {background: black;}
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+        display: block;
+        background:white;
     }   
 
