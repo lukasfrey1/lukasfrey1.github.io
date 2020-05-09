@@ -39,42 +39,38 @@
             
         .nav-toggle-label:hover {cursor: grab; transform: rotate(90deg);}
         
-
+          
         .nav-toggle-label span,
         .nav-toggle-label span::before,
-        .nav-toggle-label span::after {
+        .nav-toggle-label span::after{ 
         display: block;
         background:black;
         height: 4px;
         width: 1em;
         border-radius: 2px;
-        position: relative;
-        }
+        position: relative;}
                 
         .nav-toggle-label span::before,
         .nav-toggle-label span::after {
         content: '';
-        position: absolute;
-        }
+        position: absolute;}
 
         .nav-toggle-label span::before {
-        bottom: 7px;
-        }
+        bottom: 7px;}
 
         .nav-toggle-label span::after {
-        top: 7px;
-        }
+        top: 7px;}
 
-        .topnav {
-            position: absolute;
-            text-align: left;
-            top: 100%;
-            left: 0;
-            background: var(--background);
-            width: 100%;
-            transform: scale(1,0);
-            transform-origin: top;
-            transition: transform 400ms ease-in-out;}
+        nav {
+          position: absolute;
+          text-align: left;
+          top: 100%;
+          left: 0;
+          background: var(--background);
+          width: 100%;
+          transform: scale(1, 0);
+          transform-origin: top;
+          transition: transform 400ms ease-in-out;}
           
         nav ul {margin: 0; padding: 0; list-style: none;}
 
@@ -84,19 +80,22 @@
 
         nav a:hover{color: black;}
 
-        .nav-toggle:checked ~ nav {transform: scale(1,1)}
-
-        .nav-toggle:checked ~ nav a {opacity: 1;transition: opacity 150s ease-in-out 250s;}
+        .nav-toggle:checked ~ nav {
+          transform: scale(1,1);}
+        
+        .nav-toggle:checked ~ nav a {
+          opacity: 1;
+          transition: opacity 250ms ease-in-out 250ms;}
+  
 
  /* Indexseite*/
 
-        .index {display: grid; height: 100%; grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(3,1fr);grid-gap: 20px; margin: 50px; }
+        .index {display: grid; height: 100%; grid-template-rows: repeat(6,1fr); grid-template-columns: repeat(1fr);grid-gap: 20px; margin: 5px;}
         .TITELBILD {border-radius: 50%;}
-        .index-item {display: flex; justify-content: center; align-items: center; background: white; }
-        
+        .index-item {display: flex; justify-content: center; align-items: center; background: white;}
         .index-item.normal {grid-row:  span 1 ; grid-column: span 1;}
-        .index-item.medium {grid-row: span 1; grid-column: span 1; }
-        .index-item.big {grid-row: span 2; grid-column: span 2; background-color: whitesmoke; border-radius: 10%;}
+        .index-item.medium {grid-row: span 1; grid-column: span 1;display: none; }
+        .index-item.big {grid-row: span 2; grid-column: span 1; background-color: whitesmoke; border-radius: 10%;}
         a {text-decoration: none;}
         a:hover{ cursor: grab;}
         .svg {zoom: 0.3;}
@@ -106,11 +105,11 @@
             
            
  /* Recipes*/
-        .recipes {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 20px}
-        .recipes-item {justify-content: center; align-items: center; background: white; margin: 20px;}
-        .recipes-item.image  {grid-row: span 1; grid-column: span 2;background: white; margin: 60px;} 
+        .recipes {display: grid; height: 100%; grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(1fr); grid-gap: 20px}
+        .recipes-item {justify-content: center; align-items: center; background: white; margin:20px;}
+        .recipes-item.image  {grid-row: span 1; grid-column: span 1;background: white; margin: 60px;} 
             .recipes-item.image img {transition: 2s;}
-            .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in;}
+            .recipes-item.image:hover{transform: scale(2);cursor: zoom-in;}
         .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column: span 1;}
      
         
@@ -157,19 +156,8 @@
   
  :root{--backgroundheader:white}
 
-  
-
-    
-     
-    
- 
-    
- 
-  
-
- 
         
-    @media screen and (min-width: 800px) {    
+    @media screen and (min-width: 1000px) {    
         .nav-toggle-label {display: none}
             header::after {content:''; display: table; clear: both;}
             
@@ -186,7 +174,7 @@
           }
           
          
-          .topnav {
+          nav {
             // all: unset; 
             position: relative;
             text-align: left:
@@ -231,7 +219,25 @@
           nav a:hover::before {
             transform: scale(1,1);
           }
+
+          .index {display: grid; height: 100%; grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(3,1fr);grid-gap: 20px; margin: 50px;}
+        .TITELBILD {border-radius: 50%;}
+        .index-item {display: flex; justify-content: center; align-items: center; background: white; }
         
+        .index-item.normal {grid-row:  span 1 ; grid-column: span 1;}
+        .index-item.medium {grid-row: span 1; grid-column: span 1;display: block; }
+        .index-item.big {grid-row: span 2; grid-column: span 2; background-color: whitesmoke; border-radius: 10%;}
+        a {text-decoration: none;}
+        a:hover{ cursor: grab;}
+        .svg {zoom: 0.3;}
+        .svg:hover{transform: rotate(189deg) scale(2);transition: 3s; cursor:progress;}
+
+        .recipes {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 20px}
+        .recipes-item {justify-content: center; align-items: center; background: white; margin: 20px;}
+        .recipes-item.image  {grid-row: span 1; grid-column: span 2;background: white; margin: 60px;} 
+            .recipes-item.image img {transition: 2s;}
+            .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in;}
+        .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column: span 1;}
     }    
    
         @media screen and (prefers-color-scheme: dark) {
@@ -246,8 +252,9 @@
         .index-item.big{background-color: black; border: lightseagreen solid .5px; }
         .index-item{background-color: black;}
         header {background-color: black; border-bottom: lightseagreen solid 2px;}
-        .Logo {background-color: white; padding:100px; border-radius: 10%; border: lightseagreen 1px solid;}
-        .topnav{background-color: black;}
+        footer {background-color: ;}
+        .Logo {background-color: lightseagreen; padding:100px; border-radius: 10%; border: white 1px solid;}
+        nav{background-color: black;}
         nav a:hover{color: white;}
         nav a::before {background: lightseagreen; transform-origin: left;}
         .recipes-item.normal{background: black; border: lightseagreen solid 1px;}
