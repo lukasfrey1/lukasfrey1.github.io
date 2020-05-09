@@ -80,10 +80,10 @@
 
         nav a:hover{color: black;}
 
-        .nav-toggle:checked ~ nav {
+    .nav-toggle:checked ~ nav {
           transform: scale(1,1);}
         
-        .nav-toggle:checked ~ nav a {
+    .nav-toggle:checked ~ nav a {
           opacity: 1;
           transition: opacity 250ms ease-in-out 250ms;}
   
