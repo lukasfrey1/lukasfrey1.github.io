@@ -243,14 +243,14 @@
         h4 {color: white;}
         li {color: white;}
         h1:hover{text-shadow: black 10px 10px 10px; ;}
-        .index-item.big{background-color: black; }
+        .index-item.big{background-color: black; border: lightseagreen solid .5px; }
         .index-item{background-color: black;}
-        header {background-color: black; border-bottom: white solid 2px;}
-        .Logo {background-color: white; padding:100px; border-radius: 10%;}
+        header {background-color: black; border-bottom: lightseagreen solid 2px;}
+        .Logo {background-color: white; padding:100px; border-radius: 10%; border: lightseagreen 1px solid;}
         .topnav{background-color: black;}
         nav a:hover{color: white;}
-        nav a::before {background: white; transform-origin: left;}
-        .recipes-item.normal{background: black; border: white solid 1px;}
+        nav a::before {background: lightseagreen; transform-origin: left;}
+        .recipes-item.normal{background: black; border: lightseagreen solid 1px;}
         .recipes-item.image {background: black;}
         .nav-toggle-label span,
         .nav-toggle-label span::before,
