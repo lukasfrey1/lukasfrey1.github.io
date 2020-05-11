@@ -28,7 +28,7 @@
     /* Navbar */    
 
         .Logo{zoom: 0.09;}
-        .nav-toggle {display:none; position: absolute;}
+        .nav-toggle {display:block; position: absolute;}
         .nav-toggle-label {position: absolute;
             top: 0;
             left: 0;
@@ -78,15 +78,20 @@
 
         nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out;}
 
-        nav a:hover{color: black;}
+        nav a:hover {color: black;}
+    
+        
 
     .nav-toggle:checked ~ nav {
-          transform: scale(1,1);}
+          transform: scale(1,1);
+    }
         
     .nav-toggle:checked ~ nav a {
           opacity: 1;
           transition: opacity 250ms ease-in-out 250ms;}
-  
+    
+     
+    
 
  /* Indexseite*/
 
@@ -114,11 +119,15 @@
      
         
 /* Grills*/ 
-    .Grills {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 20px;}
-    .Grills-item {justify-content: center; align-items: center; background:blue; margin: 20px;}
+    .Grills {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(1,1fr); grid-gap: 20px; overflow: hidden;}
+    .Grills-item {justify-content: center; align-items: center; background:whitesmoke; margin: 50px; padding: 70px; border-radius: 10%;}
+    table {color: black; border: black solid 1px; border-radius: 10%; padding: 10px; margin-bottom: 20px; }
 
-
-    /* Bilder*/
+    /* Sauces*/
+      .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 0px; overflow: hidden;}
+      .sauces-item {display: flex;justify-content: center; align-items: center; background: blue; margin:20px;}
+      .s {width: 200px;}
+     /* Bilder*/
         .spare{
             display: block;
             margin-left: auto;
@@ -152,8 +161,7 @@
 
         .news{ color: white; text-align: center; } 
 
-        
-  
+       
  :root{--backgroundheader:white}
 
         
@@ -238,7 +246,14 @@
             .recipes-item.image img {transition: 2s;}
             .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in;}
         .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column: span 1;}
-    }    
+       
+        .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(4,1fr); grid-gap: 0px; overflow: hidden;}
+        .sauces-item {display: flex;justify-content: center; align-items: center; background: blue; margin:20px;}
+        .sauces-item.normal{grid-row: span 1; grid-row: span 1;}
+        .sauces-item.medium {grid-row: span 2; grid-row: span 1;}
+        .sauces-item.big {grid-row: span 2; grid-row: span 2;}
+        .s {width: 200px;}
+      }    
    
         @media screen and (prefers-color-scheme: dark) {
         body {background-color: black}
@@ -263,6 +278,9 @@
         .nav-toggle-label span::before,
         .nav-toggle-label span::after {
         display: block;
-        background:white;
+        background: lightseagreen;}
+        .Grills-item {background-color: black; border: lightseagreen solid 1px;}
+        table {color: white; border: lightseagreen solid 1px; border-radius: 10%; padding: 10px;}
+
     }   
 
