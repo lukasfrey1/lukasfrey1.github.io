@@ -81,7 +81,7 @@
         nav a:hover {color: black;}
     
         
-
+    
     .nav-toggle:checked ~ nav {
           transform: scale(1,1);
     }
