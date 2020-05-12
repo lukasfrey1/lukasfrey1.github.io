@@ -284,16 +284,19 @@
 
     }   
 
-    #Password {
+    .Password {
       color: black;
       text-align: left;
       background-color: whitesmoke;
       margin: 0px; 
       width: 100%;
       border-radius: 10%;
-      border: black solid 1px;
+
     }
 
-    .password{display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(1,1fr); padding: 20px;}
-    .ButtonP{color: black; padding-top: 100px;}
-    .Saucestext {padding: 100px;}
+    .password {display: grid; height: 50%; grid-template-rows: repeat(1,1fr);
+       grid-template-columns: repeat(3,1fr); padding: 20px;}
+    .ButtonP{color: black;}
+    .Saucestext {}
+    #password {height: 20px; font-family: Lucida Sans Unicode;}
+    
