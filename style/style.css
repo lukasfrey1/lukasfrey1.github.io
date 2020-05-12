@@ -291,12 +291,13 @@
       margin: 0px; 
       width: 100%;
       border-radius: 10%;
-
-    }
+      grid-template-columns: 2/span 1;
+      justify-content: center; }
 
     .password {display: grid; height: 50%; grid-template-rows: repeat(1,1fr);
        grid-template-columns: repeat(3,1fr); padding: 20px;}
     .ButtonP{color: black;}
     .Saucestext {}
+
     #password {height: 20px; font-family: Lucida Sans Unicode;}
     
