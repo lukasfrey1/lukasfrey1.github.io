@@ -28,7 +28,7 @@
     /* Navbar */    
 
         .Logo{zoom: 0.09;}
-        .nav-toggle {display:block; position: absolute;}
+        .nav-toggle {display:none; position: absolute;}
         .nav-toggle-label {position: absolute;
             top: 0;
             left: 0;
@@ -61,6 +61,10 @@
         .nav-toggle-label span::after {
         top: 7px;}
 
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        
         nav {
           position: absolute;
           text-align: left;
@@ -70,7 +74,12 @@
           width: 100%;
           transform: scale(1, 0);
           transform-origin: top;
-          transition: transform 400ms ease-in-out;}
+          transition: transform 400ms ease-in-out ;}
+
+          .nav-toggle:checked .nav {
+          transform: scale(1,1);}
+        
+        .nav-toggle:checked .nav a {opacity: 1; transition: opacity 250ms ease-in-out 250ms;}
           
         nav ul {margin: 0; padding: 0; list-style: none;}
 
@@ -80,15 +89,7 @@
 
         nav a:hover {color: black;}
     
-        
-    
-    .nav-toggle:checked ~ nav {
-          transform: scale(1,1);
-    }
-        
-    .nav-toggle:checked ~ nav a {
-          opacity: 1;
-          transition: opacity 250ms ease-in-out 250ms;}
+    span 
     
      
     
@@ -125,8 +126,10 @@
 
     /* Sauces*/
       .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 0px; overflow: hidden;}
-      .sauces-item {display: flex;justify-content: center; align-items: center; background: blue; margin:20px;}
+      .sauces-item {display: flex;justify-content: center; align-items: center; background: white; margin:20px;}
       .s {width: 200px;}
+
+
      /* Bilder*/
         .spare{
             display: block;
@@ -156,7 +159,7 @@
     /* restliche Formatierungen*/ 
         
 
-        .quelle {text-decoration: none; color: black; text-align: center;font-family: 'Libre Barcode 39', cursive; }
+        .quelle {text-decoration: none; color: black; text-align: center;font-family: 'Libre Barcode 39', cursive;font-style: italic; }
      
 
         .news{ color: white; text-align: center; } 
@@ -281,8 +284,9 @@
         background: lightseagreen;}
         .Grills-item {background-color: black; border: lightseagreen solid 1px;}
         table {color: white; border: lightseagreen solid 1px; border-radius: 10%; padding: 10px;}
-
-    }   
+        .Password {background-color: black;}   
+      
+      }
 
     .Password {
       color: black;
@@ -292,12 +296,12 @@
       width: 100%;
       border-radius: 10%;
       grid-template-columns: 2/span 1;
-      justify-content: center; }
+      justify-content: center;}
 
-    .password {display: grid; height: 50%; grid-template-rows: repeat(1,1fr);
-       grid-template-columns: repeat(3,1fr); padding: 20px;}
-    .ButtonP{color: black;}
-    .Saucestext {}
+    .password {display: grid; height: 50%; width: 100%; grid-template-rows: repeat(1,1fr);
+       grid-template-columns: repeat(3,1fr); margin: 40px;}
+    .ButtonP{color: black; padding-left: 20px; font-family: 'Domine', serif ;}
+    
 
-    #password {height: 20px; font-family: Lucida Sans Unicode;}
+    #password {height: 20px; }
     
