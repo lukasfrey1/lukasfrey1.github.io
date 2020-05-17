@@ -168,11 +168,11 @@
  :root{--backgroundheader:white}
 
         
-    @media screen and (min-width: 1000px) {    
+    @media screen and (min-width: 1300px) {    
         .nav-toggle-label {display: none}
             header::after {content:''; display: table; clear: both;}
             
-        .Logo {float:left;zoom: 0.09;}
+        .Logo {float:left; zoom: 0.09;}
 
         .nav-toggle-label {
             display: none;
@@ -186,7 +186,7 @@
           
          
           nav {
-            // all: unset; 
+            all: unset; 
             position: relative;
             text-align: left:
             transition: none;
@@ -199,6 +199,7 @@
             justify-content: flex-end;
             align-items: center;
           }
+          
           
           nav ul {
             display: flex;
@@ -304,3 +305,8 @@
 
     #password {height: 20px;}
     
+    #timer {color: black;}
+
+    .nav-active{
+      display: block;
+    }
