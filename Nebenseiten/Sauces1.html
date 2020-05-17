@@ -19,7 +19,7 @@
     <a href="../index.html"><img class="Logo" src="https://www.pinclipart.com/picdir/big/6-65451_grill-clipart-svg-grill-tools-svg-png-download.png" alt="https://www.pinclipart.com/maxpin/TbhJm/">
       <input type="checkbox"  class="nav-toggle" id="nav-toggle">
       <nav>
-           <ul class="topnav">   
+           <ul class="navs">   
                
                <li> <a href="spare ribs.html">Spare Ribs🥩</a></li>
                <li> <a href="Chicken.html">🍗Chicken</a></li>
@@ -53,4 +53,18 @@
     </script>
     </div> 
 </div>
+<script>
+
+  const navSlide = () => {
+          const burger = document.querySelector(".nav-toggle-label");
+          const nav = document.querySelector(".navs");
+
+          burger.addEventListener('click', ()=> {
+              nav.classList.toggle("nav-active");
+          });
+      }
+
+      navSlide();
+
+</script>
 </html>

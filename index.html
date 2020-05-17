@@ -65,7 +65,7 @@
                  
             <div class="index-item normal"> <h2>#WCBCC20</h2>
                 <a href="https://www.memphisinmay.org/events/world-championship-barbecue-cooking-contest/">  <img class="BBQContest" src="https://www.memphisinmay.org/sites/567/uploaded/images/2020WCBCCLogo_png-thumb7.png" alt="https://www.memphisinmay.org/events/world-championship-barbecue-cooking-contest/"> </a> </div>
-            <div class="index-item normal"><h2>Time until the last Maturaprüfung: <span id="timer"></h2>
+            <div class="index-item normal"><h2> gugus <span id="timer"></h2>
                 <script>
                     timer();
                 </script></div>
@@ -92,5 +92,23 @@
             navSlide();
     
     </script>
-
+    
+   <script> function timer() {
+        var countDownDate = new Date("May 29, 2020 12:00:00").getTime();
+        
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+        
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+        }, 1000);
+        }   
+</script>
 </html>

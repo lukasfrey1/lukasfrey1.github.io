@@ -71,24 +71,26 @@
           text-align: left;
           top: 100%;
           left: 0;
-          background: var(--background);
-          display: none;
+          background: var(--background); top: 105%;
           }
 
           .nav-toggle:checked nav {
           display: block;}
         
-        .nav-toggle:checked nav a {display: block;}
+          .nav-toggle:checked nav a {display: block;}
         
           
-        nav ul {margin: 0; padding: 0; list-style: none;}
+          nav ul {margin: 0; padding: 2em; list-style: none; display: none; background: var(--backgroundheader);}
 
-        nav li {margin-bottom: 1em; margin-left: 1em;}
+          nav li {margin-bottom: 1em; margin-left: 1em;}
 
-        nav a {color:grey; text-decoration: none; text-transform: uppercase;}
+          nav a {color:grey; text-decoration: none; text-transform: uppercase;}
 
-        nav a:hover {color: black;}
+          nav a:hover {color: black;}
     
+          .nav-active{
+            display: block;
+          }
     
     
      
@@ -125,7 +127,7 @@
     table {color: black; border: black solid 1px; border-radius: 10%; padding: 10px; margin-bottom: 20px; }
 
     /* Sauces*/
-      .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 0px; overflow: hidden;}
+      .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 0px; overflow: hidden;}
       .sauces-item {display: flex;justify-content: center; align-items: center; background: white; margin:20px;}
       .s {width: 200px;}
 
@@ -188,7 +190,7 @@
           nav {
             all: unset; 
             position: relative;
-            text-align: left:
+            text-align: left;
             transition: none;
             transform: scale(1,1);
             background-color: var(--backgroundheader);
@@ -201,8 +203,8 @@
           }
           
           
-          nav ul {
-            display: flex;
+          .navs {
+            padding: 0; display: flex; 
           }
           
           nav li {
@@ -254,9 +256,10 @@
         .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(4,1fr); grid-gap: 0px; overflow: hidden;}
         .sauces-item {display: flex;justify-content: center; align-items: center; background: white; margin:20px;}
         .sauces-item.normal{grid-row: span 1; grid-row: span 1;}
-        .sauces-item.medium {grid-row: span 2; grid-row: span 1;
+        .sauces-item.medium {grid-row: span 2; grid-row: span 1;}
         .sauces-item.big {grid-row: span 2; grid-row: span 2;}
-        .s {width: 200px;}}    
+        .s {width: 200px;}
+      }    
    
         @media screen and (prefers-color-scheme: dark) {
         body {background-color: black}
@@ -270,7 +273,7 @@
         .index-item.big{background-color: black; border: lightseagreen solid .5px; }
         .index-item{background-color: black;}
         header {background-color: black; border-bottom: lightseagreen solid 2px;}
-        footer {background-color: ;}
+        
         .Logo {background-color: lightseagreen; padding:100px; border-radius: 10%; border: white 1px solid;}
         nav{background-color: black;}
         nav a:hover{color: white;}
@@ -307,6 +310,4 @@
     
     #timer {color: black;}
 
-    .nav-active{
-      display: block;
-    }
+    
