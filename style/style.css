@@ -17,7 +17,7 @@
         li {color: black;font-size: 100% ; font-family: 'Domine', serif; }
 
         header{
-            background-color: var(--backgroundheader); font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px; position: relative; width: 100%; }
+            background-color: var(--backgroundheader); font-size: 150%;text-align: center; border-bottom: black solid 2px; padding-bottom: 20px; position: relative; width: 100%; z-index: 999;}
               
         footer {font-family: 'Bungee Hairline', cursive; padding: 100px; background: rgb(152,153,152);
             background: linear-gradient(0deg, rgba(152,153,152,1) 0%, rgba(197,199,197,1) 19%, rgba(255,255,255,1) 100%); ;font-size: 150%;text-align: center; border-top: 2px solid white; padding-top: 10px; border-top: black solid 2px;}
@@ -29,7 +29,8 @@
 
         .Logo{zoom: 0.09;}
         .nav-toggle {display:none; position: absolute;}
-        .nav-toggle-label {position: absolute;
+        .nav-toggle-label 
+          {position: absolute;
             top: 0;
             left: 0;
             margin-left: 1em;
@@ -44,7 +45,7 @@
         .nav-toggle-label span::before,
         .nav-toggle-label span::after{ 
         display: block;
-        background:black;
+        background: black;
         height: 4px;
         width: 1em;
         border-radius: 2px;
@@ -71,25 +72,24 @@
           top: 100%;
           left: 0;
           background: var(--background);
-          width: 100%;
-          transform: scale(1, 0);
-          transform-origin: top;
-          transition: transform 400ms ease-in-out ;}
+          display: none;
+          }
 
-          .nav-toggle:checked .nav {
-          transform: scale(1,1);}
+          .nav-toggle:checked nav {
+          display: block;}
         
-        .nav-toggle:checked .nav a {opacity: 1; transition: opacity 250ms ease-in-out 250ms;}
+        .nav-toggle:checked nav a {display: block;}
+        
           
         nav ul {margin: 0; padding: 0; list-style: none;}
 
         nav li {margin-bottom: 1em; margin-left: 1em;}
 
-        nav a {color:grey; text-decoration: none; text-transform: uppercase; opacity: 0;transition: opacity 150ms ease-in-out;}
+        nav a {color:grey; text-decoration: none; text-transform: uppercase;}
 
         nav a:hover {color: black;}
     
-    span 
+    
     
      
     
@@ -246,17 +246,16 @@
         .recipes {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(2,1fr); grid-gap: 20px}
         .recipes-item {justify-content: center; align-items: center; background: white; margin: 20px;}
         .recipes-item.image  {grid-row: span 1; grid-column: span 2;background: white; margin: 60px;} 
-            .recipes-item.image img {transition: 2s;}
-            .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in;}
+        .recipes-item.image img {transition: 2s;}
+        .recipes-item.image:hover{transform: scale(1.2);cursor: zoom-in;}
         .recipes-item.normal {background-color: whitesmoke; border-radius: 10%; padding: 20px; grid-row: span 2; grid-column: span 1;}
        
         .sauces {display: grid; height: 100%; grid-template-rows: repeat(1,1fr); grid-template-columns: repeat(4,1fr); grid-gap: 0px; overflow: hidden;}
-        .sauces-item {display: flex;justify-content: center; align-items: center; background: blue; margin:20px;}
+        .sauces-item {display: flex;justify-content: center; align-items: center; background: white; margin:20px;}
         .sauces-item.normal{grid-row: span 1; grid-row: span 1;}
-        .sauces-item.medium {grid-row: span 2; grid-row: span 1;}
+        .sauces-item.medium {grid-row: span 2; grid-row: span 1;
         .sauces-item.big {grid-row: span 2; grid-row: span 2;}
-        .s {width: 200px;}
-      }    
+        .s {width: 200px;}}    
    
         @media screen and (prefers-color-scheme: dark) {
         body {background-color: black}
@@ -284,8 +283,8 @@
         background: lightseagreen;}
         .Grills-item {background-color: black; border: lightseagreen solid 1px;}
         table {color: white; border: lightseagreen solid 1px; border-radius: 10%; padding: 10px;}
-        .Password {background-color: black;}   
-      
+        .Password {background-color: black;border: lightseagreen solid 1px;}   
+        .sauces-item {background-color: black;}
       }
 
     .Password {
@@ -303,5 +302,5 @@
     .ButtonP{color: black; padding-left: 20px; font-family: 'Domine', serif ;}
     
 
-    #password {height: 20px; }
+    #password {height: 20px;}
     
