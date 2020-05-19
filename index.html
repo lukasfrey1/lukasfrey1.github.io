@@ -21,6 +21,23 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d60033">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
+<script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
 </head> 
   
        
@@ -45,7 +62,7 @@
 </header>
                 
                 
-<body> 
+<body onload="startTime()"> 
     
     <div class="index">
 
@@ -65,10 +82,8 @@
                  
             <div class="index-item normal"> <h2>#WCBCC20</h2>
                 <a href="https://www.memphisinmay.org/events/world-championship-barbecue-cooking-contest/">  <img class="BBQContest" src="https://www.memphisinmay.org/sites/567/uploaded/images/2020WCBCCLogo_png-thumb7.png" alt="https://www.memphisinmay.org/events/world-championship-barbecue-cooking-contest/"> </a> </div>
-            <div class="index-item normal"><h2> gugus <span id="timer"></h2>
-                <script>
-                    timer();
-                </script></div>
+            <div class="index-item normal"> <h2>  <div id="txt"></div> </h2>
+                </div>
             <div class="index-item normal"> <img class="svg" src="drawing.svg" alt=""></div>
         </div>
 
@@ -92,23 +107,6 @@
             navSlide();
     
     </script>
-    
-   <script> function timer() {
-        var countDownDate = new Date("May 29, 2020 12:00:00").getTime();
-        
-        var x = setInterval(function() {
-          var now = new Date().getTime();
-          var distance = countDownDate - now;
-        
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-          document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-        
-        }, 1000);
-        }   
-</script>
+
+   
 </html>

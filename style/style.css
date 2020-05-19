@@ -195,7 +195,7 @@
             transform: scale(1,1);
             background-color: var(--backgroundheader);
             top: initial;
-            left: 50px;         
+            left: 200px;         
             grid-column: 3 / 4;
             display: flex;
             justify-content: flex-end;
@@ -309,6 +309,8 @@
 
     #password {height: 20px;}
     
-    #timer {color: black;}
+    #timer {}
+
+    
 
     
